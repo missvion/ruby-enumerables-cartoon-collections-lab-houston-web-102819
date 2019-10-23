@@ -8,8 +8,13 @@ end
 
 def summon_captain_planet(planeteer_calls)
   new_array = []
-  planeteer_calls.map! {|planeteer_calls| planeteer_calls.capitalize }
-  new_array << planeteer_calls.each {|planeteer_calls| puts "#{planeteer_calls}!"}
+  index = 0
+  while index < planeteer_calls.length do
+    planeteer_calls.map! {|planeteer_calls| planeteer_calls.capitalize }
+    new_array << planeteer_calls.each {|planeteer_calls| puts "#{planeteer_calls}!"}
+    index += 1
+  end
+  new_array
 end
 
 def long_planeteer_calls(array) 
