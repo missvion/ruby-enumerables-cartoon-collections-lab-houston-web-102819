@@ -1,5 +1,7 @@
 def roll_call_dwarves(dwarves)
-  
+  dwarves.each do |oppressed_worker|
+   puts "#{oppressed_worker.capitalize} wants to start a union!"
+end #=>
 end
 
 def summon_captain_planet# code an argument here
